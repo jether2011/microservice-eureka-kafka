@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: git
+    active: native
 ---
 spring:
   profiles: native
@@ -8,7 +8,7 @@ spring:
     config:
       server:
         native:
-          search-locations: 'file://PATH_TO_MICROSERVICES_PROJECT/ms-config-properties/{application}/{profile}'
+          search-locations: 'file:///home/jether/Desktop/DEV/workspace/microservice-eureka-kafka/ms-config-properties/{application}/{profile}'
 ---
 spring:
   profiles: git
